@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        android:gravity="center_horizontal"
+        android:text="@string/clientes_favoritos"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginRight="228dp"
+        android:gravity="center_horizontal"
+        android:text="@string/pedidos_curso"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <ScrollView
+        android:id="@+id/scrollView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_width="53dp"
+                android:layout_height="49dp"></Button>
+
+            <Button
+                android:layout_width="53dp"
+                android:layout_height="49dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="61dp"></Button>
+
+            <Button
+                android:layout_width="53dp"
+                android:layout_height="49dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="127dp"></Button>
+
+            <Button
+                android:layout_width="53dp"
+                android:layout_height="58dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="193dp"></Button>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="411dp"
+        android:layout_height="384dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
