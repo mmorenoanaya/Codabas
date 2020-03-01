@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Myapp</string>
+    <string name="clientes_favoritos" >Clientes favoritos</string>
+    <string name="pedidos_curso" >Pedidos en curso</string>
+    <string name="ramon" >Ramon Valdes</string>
+    <string name="descripcionpedido" > Pedido para las 12:00 pm de hoy</string>
+    <string name="estadopedido" >Estado del pedido</string>
+</resources>
